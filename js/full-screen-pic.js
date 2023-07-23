@@ -64,6 +64,7 @@ function closeUserModal () {
 //Функция по отрисовке полноразмерного окна
 function onPicClick (evt) {
   if (evt.target.closest('.picture')) {
+    //Здесь сохраняется ближайший (родительский) элемент с классом "picture"
     const clickPicture = evt.target.closest('.picture');
     //Отрисовываю выбранное изображение и сопутствующую информацию
     fullSizePic.src = clickPicture.querySelector('.picture__img').src;
